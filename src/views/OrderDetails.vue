@@ -29,7 +29,10 @@
     </div>
     <div class="over">
       <van-card class="realPay info" desc="2021.11.04 14:02" title="下单时间" />
-
+      <van-card class="realPay info" desc="500656924928782336" title="订单号" />
+      <van-card class="realPay info" desc="堂食" title="就餐方式" />
+      <van-card class="realPay info" desc="立即" title="取餐时间" />
+      <van-card class="realPay info" desc="无" title="备注" />
     </div>
   </div>
 </template>
@@ -77,10 +80,11 @@ export default {
     align-items: center;
     min-height: 50px;
   }
-  .info .van-card__content div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+}
+.info .van-card__content > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 </style>
