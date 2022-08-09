@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect:"OrderDetail"
+    redirect: "OrderDetail"
   },
   {
     path: "/about",
@@ -23,6 +23,11 @@ const routes = [
     path: "/OrderDetail",
     name: "OrderDetail",
     component: () => import("../views/OrderDetails.vue"),
+  },
+  {
+    path: "/details",
+    name: "details",
+    component: () => import("../views/DetailsView.vue"),
   },
 ];
 
