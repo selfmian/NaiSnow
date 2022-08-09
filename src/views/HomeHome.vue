@@ -40,7 +40,7 @@
           <div>
             <van-icon name="qr" />
           </div>
-          <div>会员码kj</div>
+          <div>会员码</div>
         </div>
       </div>
     </div>
