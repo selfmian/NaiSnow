@@ -1,33 +1,25 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import HomeHome from "../views/HomeHome.vue";
+import MenuOrder from "../views/MenuOrder.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    redirect: "OrderDetail"
+    name: "homehome",
+    component: HomeHome,
+  },
+  {
+    path: "/menu",
+    name: "Menu",
+    component: MenuOrder,
   },
   {
     path: "/about",
     name: "about",
     component: () => import("../views/AboutView.vue"),
-  },
-  {
-    path: "/about",
-    name: "about",
-    component: () => import("../views/AboutView.vue"),
-  },
-  {
-    path: "/OrderDetail",
-    name: "OrderDetail",
-    component: () => import("../views/OrderDetails.vue"),
-  },
-  {
-    path: "/details",
-    name: "details",
-    component: () => import("../views/DetailsView.vue"),
   },
 ];
 
