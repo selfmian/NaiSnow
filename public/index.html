@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="" font-size="100px">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+  </head>
+  <body style="background-color: #f9faf9;">
+    <script>
+      (function (doc, win) {
+    var root = doc.documentElement;
+    root.style.fontSize = (root.clientWidth / 750) * 100;
+    function res(e) {
+      var width = root.clientWidth;
+      var docW = 100;
+      if (width < 750) docW = (root.clientWidth / 750) * 100;
+
+      root.style.fontSize = docW + "px";
+      // console.log('font-size ====', docW,root.clientWidth);
+    }
+    win.addEventListener("resize", res, false);
+    doc.addEventListener("DOMContentLoaded", res, false);
+  })(document, window);
+  </script>
+
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
