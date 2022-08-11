@@ -8,20 +8,8 @@
     </div>
     <div class="over">
       <div class="x-cards">
-        <van-card
-          class="x-card"
-          num="1"
-          price="8.00"
-          title="脆弱蛋挞"
-          thumb="https://img01.yzcdn.cn/vant/ipad.jpeg"
-        />
-        <van-card
-          class="x-card"
-          num="2"
-          price="28.00"
-          title="霸气葡萄"
-          thumb="https://img01.yzcdn.cn/vant/ipad.jpeg"
-        />
+        <van-card class="x-card" num="1" price="8.00" title="脆弱蛋挞" thumb="https://img01.yzcdn.cn/vant/ipad.jpeg" />
+        <van-card class="x-card" num="2" price="28.00" title="霸气葡萄" thumb="https://img01.yzcdn.cn/vant/ipad.jpeg" />
       </div>
     </div>
     <div class="over">
@@ -41,7 +29,7 @@
 import axios from "../../http";
 export default {
   name: "OrderDetails",
-  created() {},
+  created() { },
   methods: {},
 };
 </script>
@@ -56,6 +44,7 @@ export default {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+
   .btn-zai {
     height: 35px;
     border-color: #94999b;
@@ -64,16 +53,20 @@ export default {
     margin-bottom: 30px;
   }
 }
+
 .x-cards {
   width: inherit;
+
   .x-card {
     background: #fff;
   }
 }
+
 .realPay {
   background: #fff;
   width: inherit;
   padding: 0;
+
   .van-card__content {
     display: flex;
     flex-direction: row;
@@ -81,7 +74,8 @@ export default {
     min-height: 50px;
   }
 }
-.info .van-card__content > div {
+
+.info .van-card__content>div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
