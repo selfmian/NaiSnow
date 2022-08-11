@@ -8,13 +8,12 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "homehome",
-    component: HomeHome,
+    redirect: "home"
   },
   {
-    path:"/OrderDetails",
-    name: "OrderDetails",
-    component: () => import("../views/OrderDetails.vue")
+    path: "/home",
+    name: "home",
+    component: () => import("../views/HomeHome.vue"),
   },
   {
     path: "/menu",
@@ -22,9 +21,24 @@ const routes = [
     component: MenuOrder,
   },
   {
-    path: "/about",
-    name: "about",
-    component: () => import("../views/AboutView.vue"),
+    path: "/orderHistory",
+    name: "OrderHistory",
+    component: () => import("../views/OrderHistory.vue"),
+  },
+  {
+    path: "/orderDetails",
+    name: "OrderDetails",
+    component: () => import("../views/OrderDetails.vue"),
+  },
+  {
+    path: "/details",
+    name: "Details",
+    component: () => import("../views/DetailsView.vue")
+  },
+  {
+    path: "/me",
+    name: "Me",
+    component: () => import("../views/HomeView.vue"),
   },
 ];
 

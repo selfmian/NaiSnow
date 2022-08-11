@@ -110,20 +110,21 @@
 <script>
 import axios from "axios";
 export default {
+  name:"home",
   data() {
     return {
       list: [],
     };
   },
   created() {
-    this.axios.get("/product/list").then((res) => {
-      console.log(res.data.data);
-    });
+    // axios.get("/product/list").then((res) => {
+    //   console.log(res.data.data);
+    // });
   },
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .my-swipe .van-swipe-item {
   color: #fff;
   font-size: 0.4rem;

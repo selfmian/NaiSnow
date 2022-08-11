@@ -76,6 +76,7 @@
 
 <script>
 import BScroll from "better-scroll";
+import axios from "axios";
 export default {
   data() {
     return {
@@ -110,11 +111,11 @@ export default {
     },
   },
   created() {
-    this.axios.get("/product/list").then((res) => {
-      // console.log(res.data.data);
-      this.goods = res.data.data;
-      console.log(this.goods);
-    });
+    // axios.get("/product/list").then((res) => {
+    //   // console.log(res.data.data);
+    //   this.goods = res.data.data;
+    //   console.log(this.goods);
+    // });
   },
   mounted() {
     //   这里用到一个定时器 等待数据渲染完毕 执行该方法 不然不能滑动 如果是真实数据 这两个方法放在this.$nextTick()里面

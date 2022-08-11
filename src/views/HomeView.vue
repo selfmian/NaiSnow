@@ -1,9 +1,8 @@
 <template>
-
   <div class="tabBar">
     <div class="top">
       <div class="circle">
-        <img src="../../public/1.jpg" alt="">
+        <img src="../assets/1.jpg" alt="" />
       </div>
       <div class="center">
         <span class="title">比比东></span>
@@ -12,10 +11,9 @@
           <div class="m-top">
             <h4>LV1</h4>
             <span class="hui">会员权益></span>
-
           </div>
 
-          <img class="img1" src="../../public/会员.png" alt="">
+          <img class="img1" src="../assets/会员.png" alt="" />
           <span class="p1">会员码</span>
           <!-- <div class="fill">
                 <img src="../../public/会员.png" alt="">
@@ -23,32 +21,23 @@
               </div> -->
           <span class="sp">61/100</span>
           <div class="pro">
-
             <div class="gress">
               <span class="cheng">距离下一等级只差39成长值></span>
             </div>
-
           </div>
-
         </div>
         <div class="wee">
           <span class="soo">积分变动会第一时间收到通知</span>
           <span class="spp">去领取</span>
         </div>
         <div class="mian">
-          <span class="wode">我的资产
-
-
+          <span class="wode"
+            >我的资产
             <ul>
               <li>2</li>
-       
               <li>62</li>
-
               <li>0.00</li>
- 
               <li>0</li>
-        
-
             </ul>
             <ul class="uls">
               <li>奈雪卷</li>
@@ -57,76 +46,66 @@
               <li>礼品卡</li>
             </ul>
           </span>
-
         </div>
-      <div id="m_mian">
+        <div id="m_mian">
           <div class="top">
             <h4>我的服务</h4>
-               <div class="kiss">
-            <i class="el-icon-s-cooperation"></i>
-            <i class="el-icon-s-claim"></i>
-            <i class="el-icon-star-off"></i>
-            <i class="el-icon-phone-outline"></i>
-           <ul class="cyan">
-            <li>储值有礼</li>
-            <li>积分签到</li>
-            <li>送TA心意</li>
-            <li>联系客服</li>
-           </ul>
+            <div class="kiss">
+              <i class="el-icon-s-cooperation"></i>
+              <i class="el-icon-s-claim"></i>
+              <i class="el-icon-star-off"></i>
+              <i class="el-icon-phone-outline"></i>
+              <ul class="cyan">
+                <li>储值有礼</li>
+                <li>积分签到</li>
+                <li>送TA心意</li>
+                <li>联系客服</li>
+              </ul>
+            </div>
+            <div class="mare">
+              <i class="el-icon-share"></i>
+              <i class="el-icon-location-information"></i>
+              <i class="el-icon-notebook-2"></i>
+              <i class="el-icon-pie-chart"></i>
+              <ul class="barre">
+                <li>兑换中心</li>
+                <li>收货地址</li>
+                <li>开发票</li>
+                <li>更多服务</li>
+              </ul>
+            </div>
           </div>
-          <div class="mare">
-            <i class="el-icon-share"></i>
-            <i class="el-icon-location-information"></i>
-            <i class="el-icon-notebook-2"></i>
-            <i class="el-icon-pie-chart"></i>
-            
-            <ul class="barre">
-                 <li>兑换中心</li>
-            <li>收货地址</li>
-            <li>开发票</li>
-            <li>更多服务</li>
-            </ul>
-          </div>
-          </div>
-       
         </div>
-       <p class="poo">会员卡适用于奈雪的茶和奈雪酒屋指定范围</p>
+        <p class="poo">会员卡适用于奈雪的茶和奈雪酒屋指定范围</p>
       </div>
-  
     </div>
-
-
-    <HelloWord />
-
+    <!-- <HelloWord /> -->
   </div>
-
 </template>
 <script>
-import HelloWord from '@/components/HelloWorld.vue'
+import HelloWord from "@/components/HelloWorld.vue";
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   data() {
     return {
-      active: 'home'
-    }
+      active: "home",
+    };
   },
   components: {
-    HelloWord
-  }
-}
+    HelloWord,
+  },
+};
 </script>
 <style  scoped lang="scss" >
 * {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
-body{
-    height: 100vh !important;
-    background: red !important ;
+body {
+  height: 100vh !important;
+  background: red !important ;
 }
-
 
 .tabBar {
   width: 100%;
@@ -139,7 +118,6 @@ body{
     display: block;
     float: left;
     position: relative;
-
   }
 
   .circle img {
@@ -149,7 +127,6 @@ body{
     position: absolute;
     left: 45%;
     top: 1rem;
-
   }
 
   .center {
@@ -163,7 +140,6 @@ body{
     .title {
       font-size: 0.3rem;
       margin-left: 43%;
-
     }
 
     .deng {
@@ -175,7 +151,6 @@ body{
       margin: auto;
 
       .m-top {
-
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -200,9 +175,6 @@ body{
         height: 0.5rem;
         right: 0.3rem;
         bottom: 1.2rem;
-
-
-
       }
 
       .p1 {
@@ -239,10 +211,8 @@ body{
             font-size: 0.1rem;
 
             line-height: 0.3rem;
-
           }
         }
-
       }
     }
 
@@ -255,7 +225,6 @@ body{
       border-radius: 0.3rem;
       display: flex;
       justify-content: space-around;
-
 
       .soo {
         font-size: 0.3rem;
@@ -273,7 +242,6 @@ body{
         border-radius: 0.3rem;
         font-size: 0.3rem;
         line-height: 0.3rem;
-
       }
     }
 
@@ -284,7 +252,6 @@ body{
       border-radius: 0.3rem;
 
       .wode {
-
         line-height: 0.4rem;
         display: block;
         font-size: 0.4rem;
@@ -306,59 +273,56 @@ body{
           display: inline-block;
         }
       }
-
     }
-#m_mian{
-  position: relative;
-  margin-top: 0.1rem;
-  border-radius: 0.3rem;
-  background: #fff;
-  width: 80vw;
-  height:3.5rem;
-     border: 1px solid red;
+    #m_mian {
+      position: relative;
+      margin-top: 0.1rem;
+      border-radius: 0.3rem;
+      background: #fff;
+      width: 80vw;
+      height: 3.5rem;
+      border: 1px solid red;
 
-     .top h4{
+      .top h4 {
         display: block;
         font-size: 0.4rem;
         margin-left: 0.3rem;
         margin-top: 0.3rem;
-     }
-     .kiss i{
-     
-      font-size: 0.5rem;
-      margin-left: 0.8rem;
-     }
-     .cyan{
-      position: absolute;
-      height: 0.5rem;
-      top: 1.2rem;
-     li{
-
-      font-size: 0.3rem;
-      display: flex;
-      display: inline-block;
-      margin-left: 0.2rem;
-      margin-bottom: 2rem;
-     }
-     }
-     .mare i{
-         font-size: 0.5rem;
-         margin-left: 0.8rem;
-     }
-    .barre{
-      position: absolute;
-      height: 0.5rem;
-      top: 2.4rem;
-      li{
-        font-size: 0.3rem;
-        display: flex;
-        display: inline-block;
-            margin-left: 0.3rem;
-      margin-bottom: 2rem;
+      }
+      .kiss i {
+        font-size: 0.5rem;
+        margin-left: 0.8rem;
+      }
+      .cyan {
+        position: absolute;
+        height: 0.5rem;
+        top: 1.2rem;
+        li {
+          font-size: 0.3rem;
+          display: flex;
+          display: inline-block;
+          margin-left: 0.2rem;
+          margin-bottom: 2rem;
+        }
+      }
+      .mare i {
+        font-size: 0.5rem;
+        margin-left: 0.8rem;
+      }
+      .barre {
+        position: absolute;
+        height: 0.5rem;
+        top: 2.4rem;
+        li {
+          font-size: 0.3rem;
+          display: flex;
+          display: inline-block;
+          margin-left: 0.3rem;
+          margin-bottom: 2rem;
+        }
       }
     }
- }
-    .poo{
+    .poo {
       font-size: 0.3rem;
       color: #cfd0d1;
       margin: auto;
