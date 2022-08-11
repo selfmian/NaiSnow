@@ -45,12 +45,16 @@ export default {
   align-items: center;
   border-radius: 8px;
 
+  h3 {
+    margin-bottom: 0;
+  }
+
   .btn-zai {
     height: 35px;
     border-color: #94999b;
     color: #94999b;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 
@@ -73,6 +77,10 @@ export default {
     align-items: center;
     min-height: 50px;
   }
+}
+
+.info .van-card__content {
+  min-height: 30px;
 }
 
 .info .van-card__content>div {
